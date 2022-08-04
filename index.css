@@ -20,12 +20,12 @@ header{
     align-items: center;
     flex-direction: column;
     color: white;
+    text-align: center;
 }
 
 #fCont1{
     display: flex;
 }
-
 
 #tImg{
     background-size: cover;
@@ -42,6 +42,7 @@ header{
     margin-top: 10px;
     margin-bottom: 10px;
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 p{
     font-family: 'Courier New', Courier, monospace;
@@ -56,9 +57,9 @@ input{
     border-radius: 5px;
     padding: 10px;
     text-decoration: none;
+    background: transparent;
+    color: white;
 }
-
-
 
 @media (max-width: 320px) {
     #tImg{
