@@ -28,6 +28,8 @@ function ApiGit(){
        bio.innerText = data.bio
        qntRepo.innerText = data.public_repos
        img.src = data.avatar_url
+    }).catch((data) =>{
+        
     })
 }
     

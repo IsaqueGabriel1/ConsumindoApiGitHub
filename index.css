@@ -3,10 +3,15 @@
     padding: 0;
 }
 
+body{
+    background: rgb(0, 5, 20);
+}
+
 header{
     margin-top: 100px;
     text-align: center;
     height: 100px;
+    color: white;
 }
 
 .container{
@@ -14,11 +19,13 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: white;
 }
 
 #fCont1{
     display: flex;
 }
+
 
 #tImg{
     background-size: cover;
@@ -28,6 +35,16 @@ header{
 
 #txtUser{
     margin-top: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#txtBio{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
 }
 
 input{
@@ -36,12 +53,19 @@ input{
     border-right: solid 1px #3612ff;
     border-left: solid 1px #3612ff;
     padding-left: 3px;
-    border-radius: 1px;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
 }
+
+
 
 @media (max-width: 320px) {
     #tImg{
         width: 50vw;
+    }
+    input{
+        padding: 7px;
     }
 }
 
@@ -49,16 +73,25 @@ input{
     #tImg{
         width: 50vw;
     }
+    input{
+        padding: 7px;
+    }
 }
 
 @media (max-width: 425px) {
     #tImg{
         width: 50vw;
     }
+    input{
+        padding: 7px;
+    }
 }
 
 @media (max-width: 768px) {
     #tImg{
         width: 25vw;
+    }
+    input{
+        padding: 7px;
     }
 }
