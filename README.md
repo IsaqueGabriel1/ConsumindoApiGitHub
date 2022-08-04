@@ -1,4 +1,4 @@
-# ConsumindoApiGitHub
+# Consumindo a api do GitHub
 Neste projeto, estou utilizando a Api do GitHub para procurar por usuários cadastrados no site.
 Para rodar, você precisa abrir o arquivo index.html em um navegador de sua confiança.
 
