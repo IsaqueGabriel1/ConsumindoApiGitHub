@@ -1,7 +1,11 @@
-
 function ApiGit(){
     let teste = document.getElementById("teste")
     let userName;
+    let img = document.getElementById("tImg")
+    let user = document.getElementById("txtUser")
+    let bio = document.getElementById("txtBio")
+    let qntRepo = document.getElementById("txtQntRepos")
+
     if(teste.value == ""){
         userName = "IsaqueGabriel1"
     }else{
@@ -15,21 +19,21 @@ function ApiGit(){
        },
        //caso haja exito na promessa, será retornado um json()
     }).then((resp) => {
-       console.log(resp)
        return resp.json()
     }).then((data) =>{
        //aqui é consumido os dados da API
-       let img = document.getElementById("tImg")
-       let user = document.getElementById("txtUser")
-       let bio = document.getElementById("txtBio")
-       let qntRepo = document.getElementById("txtQntRepos")
-   
-       user.innerText = data.login
-       bio.innerText = data.bio
-       qntRepo.innerText = data.public_repos
-       img.src = data.avatar_url
-    }).catch((data) =>{
-        //Aqui será o tratamento de erro caso a requisição falhe
+       if(data.login == undefined){
+            user.innerText = "Usuario não encontrado!"
+            bio.innerText = ""
+            qntRepo.innerText = ""
+            img.src = ""
+       }else{
+            user.innerText = data.login
+            bio.innerText = data.bio
+            qntRepo.innerText = data.public_repos
+            document.getElementsByTagName("p")[2].style.display = "none"
+            img.src = data.avatar_url
+       } 
     })
 }
     
