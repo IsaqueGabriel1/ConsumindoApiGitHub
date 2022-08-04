@@ -68,6 +68,9 @@ input{
     input{
         padding: 7px;
     }
+    #txtBio{
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 375px) {
