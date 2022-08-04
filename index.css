@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin-top: 100px;
+    text-align: center;
+    height: 100px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#fCont1{
+    display: flex;
+}
+
+#tImg{
+    background-size: cover;
+    width: 15vw;
+    border-radius: 50vw;
+}
+
+#txtUser{
+    margin-top: 15px;
+}
+
+input{
+    margin-top: 10px;
+    border: none;
+    border-right: solid 1px #3612ff;
+    border-left: solid 1px #3612ff;
+    padding-left: 3px;
+    border-radius: 1px;
+}
+
+@media (max-width: 320px) {
+    #tImg{
+        width: 50vw;
+    }
+}
+
+@media (max-width: 375px) {
+    #tImg{
+        width: 50vw;
+    }
+}
+
+@media (max-width: 425px) {
+    #tImg{
+        width: 50vw;
+    }
+}
+
+@media (max-width: 768px) {
+    #tImg{
+        width: 25vw;
+    }
+}
